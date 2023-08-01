@@ -12,7 +12,7 @@ public class M_Pessoa {
     private String email;
     private Long cpf;
     private Long telefone;
-    private String dataNasc;
+    private String datanasc;
     private String senha;
 
     public Long getId() {
@@ -56,11 +56,11 @@ public class M_Pessoa {
     }
 
     public String getDataNasc() {
-        return dataNasc;
+        return datanasc;
     }
 
     public void setDataNasc(String dataNasc) {
-        this.dataNasc = dataNasc;
+        this.datanasc = dataNasc;
     }
 
     public String getSenha() {
