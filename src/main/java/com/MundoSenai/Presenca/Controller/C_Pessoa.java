@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.time.LocalDate;
+
 @Controller
 public class C_Pessoa {
     @GetMapping("/")
@@ -35,6 +37,7 @@ public class C_Pessoa {
                                @RequestParam("dataNasc") String dataNasc,
                                @RequestParam("senha") String senha,
                                @RequestParam("confsenha") String confsenha){
+        S_Pessoa.cadastrarPessoa(nome,email,cpf,telefone,dataNasc,senha,confsenha);
         return "redirect:/";
     }
 }
