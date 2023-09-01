@@ -58,9 +58,9 @@ public class C_Pessoa {
                                      @RequestParam("telefone") String telefone,
                                      @RequestParam("datanasc") String datanasc,
                                      @RequestParam("senha") String senha,
-                                     @RequestParam("confsenha") String confirmsenha,
+                                     @RequestParam("confsenha") String confsenha,
                                      RedirectAttributes redirectAttributes) {
 
-       return S_Pessoa.cadastrarPessoa(nome, cpf, email, telefone, datanasc, senha, confirmsenha);
+       return S_Pessoa.cadastrarPessoa(nome, cpf, email, telefone, datanasc, senha, confsenha);
     }
 }
